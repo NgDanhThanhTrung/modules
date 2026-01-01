@@ -17,25 +17,28 @@ Các module trong repository này được xây dựng dựa trên kiến trúc 
 
 ## 💎 Danh sách Module
 
-| Module Name | Version | Category | Status |
-| :--- | :---: | :---: | :--- |
-| **`auth-premium`** | `v2.4.0` | Security | 🟢 Stable |
-| **`payment-bridge`** | `v1.2.0` | Finance | 🟡 Beta |
-| **`smart-cache`** | `v3.0.1` | Optimization | 🟢 Stable |
-| **`ai-processor`** | `v0.5.0` | Machine Learning | 🔵 Experimental |
+| Module Name | Link |
+| :--- | :--- |
+| **`auth-premium`** | `v2.4.0` |
+| **`payment-bridge`** | `v1.2.0` |
+| **`smart-cache`** | `v3.0.1` |
+| **`ai-processor`** | `v0.5.0` |
 
 ---
 
-## 🛠 Hướng dẫn tích hợp
+## 🛡️ Bảo mật & Bảo trì
+Chúng tôi cam kết bảo mật cho mọi dòng code:
+1.  **Cập nhật hàng tháng:** Đảm bảo tương thích với các thư viện mới nhất.
+2.  **Quét mã độc:** Tự động kiểm tra qua Snyk và SonarQube trước khi release.
+3.  **Backup:** Hệ thống dự phòng dữ liệu cho các module lưu trữ.
 
-### 1. Yêu cầu hệ thống
-* Docker 20.10+
-* Node.js 18+ hoặc Python 3.9+
-* Mã kích hoạt (License Key) dành cho phiên bản Premium.
+---
 
-### 2. Cài đặt
-Để sử dụng một module, bạn có thể thêm trực tiếp vào file cấu hình của mình:
+## 📞 Liên hệ & Hỗ trợ
+Nếu bạn cần cấp quyền truy cập hoặc yêu cầu module tùy chỉnh, vui lòng liên hệ:
 
-```bash
-# Ví dụ cài đặt module Auth qua NPM
-npm install @your-brand/auth-premium
+* **Email:** [support@domain.com](mailto:thanhtrungnguyendanh@gmail.com)
+* **Telegram:** [@PremiumSupport](https://t.me/NgDanhThanhTrung)
+
+---
+*© 2026 Your Brand Name. Bảo lưu mọi quyền.*
