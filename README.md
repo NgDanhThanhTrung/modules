@@ -26,14 +26,6 @@ Các module trong repository này được xây dựng dựa trên kiến trúc 
 
 ---
 
-## 🛡️ Bảo mật & Bảo trì
-Chúng tôi cam kết bảo mật cho mọi dòng code:
-1.  **Cập nhật hàng tháng:** Đảm bảo tương thích với các thư viện mới nhất.
-2.  **Quét mã độc:** Tự động kiểm tra qua Snyk và SonarQube trước khi release.
-3.  **Backup:** Hệ thống dự phòng dữ liệu cho các module lưu trữ.
-
----
-
 ## 📞 Liên hệ & Hỗ trợ
 Nếu bạn cần cấp quyền truy cập hoặc yêu cầu module tùy chỉnh, vui lòng liên hệ:
 
