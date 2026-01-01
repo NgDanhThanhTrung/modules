@@ -19,7 +19,7 @@ Các module trong repository này được xây dựng dựa trên kiến trúc 
 
 | Module Name | Link |
 | :--- | :--- |
-| **`auth-premium`** | `v2.4.0` |
+| **`YOUTUBE`** | `https://raw.githubusercontent.com/NgDanhThanhTrung/modules/refs/heads/main/YOUTUBE.sgmodule` |
 | **`payment-bridge`** | `v1.2.0` |
 | **`smart-cache`** | `v3.0.1` |
 | **`ai-processor`** | `v0.5.0` |
