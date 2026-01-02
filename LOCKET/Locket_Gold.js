@@ -9,7 +9,7 @@ var ua=$request.headers["User-Agent"]||$request.headers["user-agent"],obj=JSON.p
 
 obj.Attention="Chúc mừng bạn! Vui lòng không bán hoặc chia sẻ cho người khác!";
 
-var ttrung53={
+var ngdanhthanhtrung={
   is_sandbox:!1,
   ownership_type:"PURCHASED",
   billing_issues_detected_at:null,
@@ -22,10 +22,10 @@ var ttrung53={
   store:"app_store"
 };
 
-var ttrung53_sub={
+var ngdanhthanhtrung_sub={
   grace_period_expires_date:null,
   purchase_date:"2008-03-05T01:04:17Z",
-  product_identifier:"com.ttrung53.premium.yearly",
+  product_identifier:"com.ngdanhthanhtrung.premium.yearly",
   expires_date:"2999-12-18T01:04:17Z"
 };
 
@@ -33,10 +33,10 @@ const match=Object.keys(mapping).find(e=>ua.includes(e));
 
 if(match){
   let[e,s]=mapping[match];
-  s?(ttrung53_sub.product_identifier=s,obj.subscriber.subscriptions[s]=ttrung53):obj.subscriber.subscriptions["com.ttrung53.premium.yearly"]=ttrung53,obj.subscriber.entitlements[e]=ttrung53_sub
+  s?(ngdanhthanhtrung_sub.product_identifier=s,obj.subscriber.subscriptions[s]=ngdanhthanhtrung):obj.subscriber.subscriptions["com.ngdanhthanhtrung.premium.yearly"]=ngdanhthanhtrung,obj.subscriber.entitlements[e]=ngdanhthanhtrung_sub
 }else{
-  obj.subscriber.subscriptions["com.ttrung53.premium.yearly"]=ttrung53;
-  obj.subscriber.entitlements.pro=ttrung53_sub
+  obj.subscriber.subscriptions["com.ngdanhthanhtrung.premium.yearly"]=ngdanhthanhtrung;
+  obj.subscriber.entitlements.pro=ngdanhthanhtrung_sub
 }
 
 $done({body:JSON.stringify(obj)});
