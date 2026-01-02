@@ -19,8 +19,8 @@ Các module trong repository này được xây dựng dựa trên kiến trúc 
 
 | Module Name | Link |
 | :--- | :--- |
-| **`YOUTUBE`** | `https://raw.githubusercontent.com/NgDanhThanhTrung/modules/refs/heads/main/YOUTUBE.sgmodule` |
-| **`LOCKET`** | `https://raw.githubusercontent.com/NgDanhThanhTrung/modules/refs/heads/main/LOCKET/Locket_NDTT.sgmodule` |
+| **`YOUTUBE`** | `https://raw.githubusercontent.com/NgDanhThanhTrung/modules/main/YOUTUBE.sgmodule` |
+| **`LOCKET`** | `https://raw.githubusercontent.com/NgDanhThanhTrung/modules/main/LOCKET/Locket_NDTT.sgmodule` |
 | **`smart-cache`** | `v3.0.1` |
 | **`ai-processor`** | `v0.5.0` |
 
