@@ -1,5 +1,5 @@
 #!name = YouTube
-#compiled by NgDanhThanhTrung
+#!compiled by NgDanhThanhTrung
 [General]
 bypass-system = true
 dns-server = 94.140.14.14, 94.140.15.15
