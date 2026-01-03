@@ -1,15 +1,17 @@
-console.log(`spotify-json-2025.06.20`);
 let url = $request.url;
-// console.log(`原始url:${url}`);
-if (url.includes('com:443')) {
-    url = url.replace(/com:443/, 'com');
+const replacements = {
+    'com:443': 'com',
+    'platform=iphone': 'platform=ipad'
+};
+
+let modified = false;
+for (const [oldVal, newVal] of Object.entries(replacements)) {
+    if (url.includes(oldVal)) {
+        url = url.split(oldVal).join(newVal); // Cách thay thế nhanh không dùng Regex
+        modified = true;
+    }
 }
-if (url.includes('platform=iphone')) {
-    url = url.replace(/platform=iphone/, 'platform=ipad');
-    // console.log(`替换platform:${url}`);
-} else {
-    console.log('无需处理');
-}
-$done({
-    url
-});
+
+if (modified) console.log('Spotify URL updated');
+
+$done({ url });
