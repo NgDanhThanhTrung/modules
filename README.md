@@ -1,3 +1,4 @@
+# Thuộc về NgDanhThanhTrung
 # 🌟 Premium Modules Collection
 
 Chào mừng bạn đến với kho lưu trữ **Premium Modules**. Đây là nơi tập hợp các giải pháp mã nguồn chất lượng cao, được thiết kế chuyên biệt cho các hệ thống yêu cầu tính ổn định và bảo mật tuyệt đối.
@@ -21,15 +22,12 @@ Các module trong repository này được xây dựng dựa trên kiến trúc 
 | :--- | :--- |
 | **`YOUTUBE`** | `https://raw.githubusercontent.com/NgDanhThanhTrung/modules/main/YOUTUBE.sgmodule` |
 | **`LOCKET`** | `https://raw.githubusercontent.com/NgDanhThanhTrung/modules/main/LOCKET/Locket_NDTT.sgmodule` |
-| **`smart-cache`** | `v3.0.1` |
-| **`ai-processor`** | `v0.5.0` |
 
 ---
 
 ## 📞 Liên hệ & Hỗ trợ
 Nếu bạn cần cấp quyền truy cập hoặc yêu cầu module tùy chỉnh, vui lòng liên hệ:
 
-* **Email:** [support@domain.com](mailto:thanhtrungnguyendanh@gmail.com)
 * **Telegram:** [@PremiumSupport](https://t.me/NgDanhThanhTrung)
 
 ---
