@@ -52,7 +52,7 @@ function processMapObj(accountAttributesMapObj){
     accountAttributesMapObj['catalogue'] = {stringValue : 'premium'};
     accountAttributesMapObj['high-bitrate'] = {boolValue : true};
     accountAttributesMapObj['libspotify'] = {boolValue : true};
-    // Tab quang cao thanh vien o goc duoi ben phai cua trang chu
+    // 主页右下角的会员广告tab
     accountAttributesMapObj['nft-disabled'] = {stringValue : '1'};
     accountAttributesMapObj['shuffle'] = {boolValue : false};
     accountAttributesMapObj['audio-quality'] = {stringValue : '1'};
@@ -61,14 +61,14 @@ function processMapObj(accountAttributesMapObj){
     accountAttributesMapObj['can_use_superbird'] = {boolValue : true};
     accountAttributesMapObj['type'] = {stringValue : 'premium'};
 
-    // VIP Moi
+    // vip新增的
     accountAttributesMapObj['loudness-levels'] = {stringValue : '1:-9.0,0.0,3.0:-2.0'};
     accountAttributesMapObj['payments-initial-campaign'] = {stringValue : 'web'};
     accountAttributesMapObj['shuffle-eligible'] = {boolValue : true};
     accountAttributesMapObj['unrestricted'] = {boolValue : true};
-    // Khong phu hop voi tre em
+    // 儿童不宜
     // accountAttributesMapObj['filter-explicit-content'] = {boolValue : true};
-    //Xac dinh xem tuy chinh co hop le khong. Mot so nguoi dung khong co thuoc tinh nay.
+    // 决定customize是否有效 有的用户没有此属性
     accountAttributesMapObj['com.spotify.madprops.use.ucs.product.state'] = {boolValue : true};
 
     delete accountAttributesMapObj['ad-use-adlogic'];
@@ -82,7 +82,7 @@ function processMapObj(accountAttributesMapObj){
     // accountAttributesMapObj['ab-nft-navigation-menu'] = {stringValue : '3'};
     // accountAttributesMapObj['ab-desktop-hide-follow'] = {boolValue : false};
 
-    // Cac linh vuc khong chac chan
+    // 不确定的字段
     // accountAttributesMapObj['social-session'] = {boolValue : true};
     // accountAttributesMapObj['head-files-url'] = {stringValue : 'https://heads-fa.scdn.co/head/{file_id}'};
     // accountAttributesMapObj['publish-playlist'] = {boolValue : true};
