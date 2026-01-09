@@ -1,15 +1,13 @@
-#!name=Spotify & Locket Premium
+#!name= Locket Gold & Spotify Premium
 #!desc=Unlock Spotify Premium và Locket Gold.
-
-[Header Rewrite]
-^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com)\/user-customization-service\/v1\/customize header-del if-none-match
+#!author=NgDanhThanhTrung (Compiled)
 
 [Script]
-spotify-json = type=http-request, pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com)\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/, script-path=https://raw.githubusercontent.com/NgDanhThanhTrung/modules/main/SPOTIFY/spotify-json.js, requires-body=0
-spotify-proto = type=http-response, pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com)\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$, script-path=https://raw.githubusercontent.com/NgDanhThanhTrung/modules/main/SPOTIFY/spotify-proto.js, requires-body=1, binary-body-mode=1
-spotify-header = type=http-request, pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com)\/user-customization-service\/v1\/customize, script-path=https://raw.githubusercontent.com/NgDanhThanhTrung/modules/main/SPOTIFY/spotify-qx-header.js, requires-body=0
-revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://raw.githubusercontent.com/NgDanhThanhTrung/modules/main/LOCKET/LocketGold.js, requires-body=true, max-size=-1, timeout=60
-deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers), script-path=https://raw.githubusercontent.com/NgDanhThanhTrung/modules/main/LOCKET/deleteHeader.js, timeout=60
+# --- Locket Gold ---
+Locket_Gold = type=http-response,pattern=^https:\/\/api\.locket\.camera\/v1\/subs\/status,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NgDanhThanhTrung/modules/main/Test_modules/Locket/LocketGold.js
+
+# --- Spotify Premium ---
+Spotify_Premium = type=http-response,pattern=^https:\/\/api\.spotify\.com\/v1\/users\/.*\/settings,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NgDanhThanhTrung/modules/refs/heads/main/Test_modules/Spotify/Spotify.js
 
 [MITM]
-hostname = %APPEND% spclient.wg.spotify.com, *-spclient.spotify.com, *.googleusercontent.com, api.revenuecat.com
+hostname = %APPEND% api.locket.camera, api.spotify.com
