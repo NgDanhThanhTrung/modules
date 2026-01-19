@@ -1,0 +1,9 @@
+#!name=Alight Motion Pro Unlock
+#!desc=Crack By NgDanhThanhTrung
+#!author=NgDanhThanhTrung
+
+[MITM]
+hostname = %APPEND% us-central1-alight-creative.cloudfunctions.net
+
+[Script]
+alight_motion_crack = type=http-response,pattern=^https?:\/\/us-central1-alight-creative\.cloudfunctions\.net\/getConfigs,requires-body=1,max-size=131072,script-path=https://raw.githubusercontent.com/NgDanhThanhTrung/modules/main/AlightMotion/AlightMotion.js
