@@ -1,0 +1,8 @@
+#!name=KineMaster K
+#!desc=Crack By NgDanhThanhTrung
+
+[MITM]
+hostname = %APPEND% api-account.kinemasters.com, us-central1-alight-creative.cloudfunctions.net, api.picsart.com, api.funimate.com, lapi.photomath.net, photos.adobe.io, api.revenuecat.com, app.algoriddim.com, buy.itunes.apple.com, web.vizmato.com, api.reface.video, api.busuu.com, api.calm.com, www.calm.com, api.unfold.app
+
+[Script]
+KineMaster = type=http-response,pattern=^https:\/\/api-account\.kinemasters\.com\/v2\/user\/subscribe,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/refs/heads/main/Kinemaster.json
